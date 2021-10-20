@@ -45,7 +45,7 @@ There cmake check three paths for the three dependencies of ImarisWriter. All th
 The header files (\*.h) can be found in the projects themselves. Copy them. 11 for zlib in the main folder, 5 for LZ4, in the `\lib` folder.
 
 You must build the binaries for zlib and lz4 yourself by opening the .sln file in the respective github-projects with visual studio (see above). In visual studio you select `release` and `x64`, right click `zlibvc` or `liblz4-dll` and click `build`. The library file (.lib) and binary file (.dll) are found in the build directory. Copy them to their respective folders.
-NOTE: Rename `zlibwapi.lib` to `zlib.libto`
+NOTE: Rename `zlibwapi.lib` to `zlib.lib`
 
 Once
 the cmake command runs there will be a .sln file in the release directory. You can open it with VisualStudio and build the ImarisWriter. 
