@@ -5,7 +5,7 @@ The [PyImarisWriter package](https://pypi.org/project/PyImarisWriter/) did not w
 We followed the instructions below and packaged the four .dll files in a `.zip` file. If you're lazy and running Windows 10, download the release on this page.
 
 # Build instructions
-The build instructions on the ImarisWriter github were a bit too bare metal for us, so we wrote this more detailed version. Skip to result to just download the binaries. 
+The build instructions on the ImarisWriter github were a bit too bare metal for us, so we wrote this more detailed version.
 
 Steps:
 * Install [visual studio 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16) with "desktop development with c++"
