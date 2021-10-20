@@ -1,7 +1,8 @@
 # How to get the PyImarisWriter to work on the Acquifer HIVE system (Windows Server 2019)
-The [PyImarisWriter package](https://pypi.org/project/PyImarisWriter/) did not work for us. It raised the error: `Could not find module 'bpImarisWriter96.dll' (or one of its dependencies). Try using the full path with constructor syntax.`. Adding the folder to the PATH variable in windows resolved the error but raised a new one: `HDF version mismatch. Headers are 1.10.6, library is 1.12.1`. Replacing the hdf5.dll in the folder with an the [1.10.6 version](https://www.hdfgroup.org/downloads/hdf5/) did not change the error.
+The [PyImarisWriter package](https://pypi.org/project/PyImarisWriter/) did not work for us on Windows Server 2019.
+It raised the error: `Could not find module 'bpImarisWriter96.dll' (or one of its dependencies). Try using the full path with constructor syntax.`. Adding the folder to the PATH variable in windows resolved the error but raised a new one: `HDF version mismatch. Headers are 1.10.6, library is 1.12.1`. Replacing the hdf5.dll in the folder with an the [1.10.6 version](https://www.hdfgroup.org/downloads/hdf5/) did not change the error.
 
-_NOTE: `pip install PyImarisWriter` works on Windows 7 and Windows 10, but fo us it did not work on Windows Server 2019..._
+_NOTE: `pip install PyImarisWriter` works fine on Windows 7 and Windows 10, but we could not get it did to work on Windows Server 2019..._
 
 # Windows 10 release
 We followed the instructions below and packaged the four .dll files in a `.zip` file. If you're lazy and running Windows 10, download the release on this page.
